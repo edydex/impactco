@@ -1,0 +1,109 @@
+:root {
+	--dark: #333333;
+	--darker: #111111;
+	--light: #f0f0f0;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto';
+	font-size: 16px;
+	padding-top: 12rem;
+	background-image: radial-gradient(var(--light) 8%, transparent 8%);
+	background-size: 16px 16px;
+}
+
+p, a {
+	color: var(--dark);
+	font-weight: 500;
+}
+h3 {
+	margin-bottom: 0.75rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 36px;
+	position: relative;
+}
+
+.card {
+	display: grid;
+	width: calc(100% - 36px);
+	max-width: 640px;
+	padding: 24px;
+
+	color: var(--dark);
+	border: 8px solid var(--dark);
+	box-shadow: 12px 12px 0px var(--dark);
+	background-color: white;
+	transition: box-shadow 150ms ease-in-out;
+}
+.card:hover {
+	box-shadow: 10px 10px 0px var(--dark);
+}
+.main-card {
+	row-gap: 24px;
+	grid-template-columns: 50% 50%;
+}
+.main-card img {
+	grid-row: 2 / span 2;
+	grid-column: 2;
+}
+.main-card .hero-text,
+.main-card .tag-text {
+	grid-column: 1 / span 2;
+}
+
+img {
+	max-width: 100%;
+	box-shadow: 10px 10px 0px var(--light);
+}
+
+h3, .tag-text {
+	color: var(--darker);
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.tag-text {
+	font-family: 'Roboto Slab', monospace;
+	text-align: center;
+}
+
+.hero-text {
+	margin: 12px 0px;
+	font-weight: 700;
+	font-size: 36px;
+	color: var(--darker);
+}
+
+.links-card {
+	display: flex;
+}
+.links-card section {
+	width: 100%;
+}
+.links-card section a {
+	margin-left: -6px;
+}
+.links-card a {
+	display: inline-block;
+	padding: 6px;
+	background-color: white;
+	color: var(--dark);
+	text-decoration: none;
+	margin-right: 16px;
+	margin-bottom: 4px;
+	box-shadow: 0px 0px 0px -4px transparent, 0px 0px 0px var(--light);
+	transition: 100ms ease-in-out;
+}
+.links-card a:hover {
+	box-shadow: 0px 0px 36px -4px rgba(0,0,0,0.06), 4px 4px 0px var(--light);
+}
