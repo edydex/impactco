@@ -62,7 +62,8 @@ main {
 	padding: 0.5rem 1rem;
 	font-size: 2rem;
 	max-width: 400px;
-	margin: 0 auto;
+	margin: auto;
+	margin-bottom: 1rem;
 	position: relative;
 	text-align: center;
 	background-color: white;
@@ -153,7 +154,7 @@ main .container {
 }
 
 section {
-	padding: 1rem 0;
+	padding: 3rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
