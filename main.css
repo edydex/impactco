@@ -3,7 +3,7 @@
 	--darker: #111111;
 	--light: #f0f0f0;
 
-	--logo-size: 120px;
+	--logo-size: 180px;
 
 	--circle-distance: 8px;
 	--circle-size: 5px;
@@ -49,11 +49,15 @@ header ul li a {
 main {
 	flex-grow: 1;
 	position: relative;
-	margin: 0 5%;
+	margin: 0 0%;
 	border-left: 4px solid var(--dark);
 	border-right: 4px solid var(--dark);
 }
-
+@media (min-width: 800px) {
+main {
+	margin: 0 0% /*why the nuts does this impact the phone view bruh? */ /*anyway, it was 0 5% */
+}
+}
 .hero-text {
 	padding: 0.5rem 1rem;
 	font-size: 2rem;
@@ -89,7 +93,7 @@ main {
 .logo {
 	display: block;
 	position: absolute;
-	top: -1.5rem;
+	top: -2.5rem;
 	left: 50%;
 	transform: translate(-50%, 0);
 	aspect-ratio: 1;
