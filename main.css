@@ -3,7 +3,7 @@
 	--darker: #111111;
 	--light: #f0f0f0;
 
-	--logo-size: 180px;
+	--logo-size: 220px; /*adjust the size of the logo*/
 
 	--circle-distance: 8px;
 	--circle-size: 5px;
@@ -24,12 +24,13 @@ body {
 }
 
 header {
-	padding: 0 0.75rem;
+	padding: 0.5rem 0.75rem;
 	position: sticky;
 	border-top: 4px solid var(--dark);
 	border-bottom: 4px solid var(--dark);
-	font-size: 1.25rem;
+	font-size: 1.75rem;
 	font-weight: 500;
+	display-text: center;
 }
 header ul {
 	margin: 0;
@@ -94,7 +95,7 @@ main {
 .logo {
 	display: block;
 	position: absolute;
-	top: -2.5rem;
+	top: -3rem; /*move logo up or down */
 	left: 50%;
 	transform: translate(-50%, 0);
 	aspect-ratio: 1;
