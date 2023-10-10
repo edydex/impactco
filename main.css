@@ -215,6 +215,8 @@ h1 {
 	gap: 24px;
 	background-image: linear-gradient(135deg, black 5%, white 5%, white 45%, black 45%, black 55%, white 55%, white 95%, black 95%);
 	background-size: 10px 10px;
+		  border-radius: 10px;
+
 }
 .links a {
 	text-decoration: none;
